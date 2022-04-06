@@ -1,0 +1,29 @@
+{
+  "name": "wordle-ES-solutions",
+  "version": "1.0.0",
+  "description": "All the solutions of the Wordle ES edition",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "npm run build && node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javigaralva/wordle-ES-solutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javigaralva/wordle-ES-solutions/issues"
+  },
+  "homepage": "https://github.com/javigaralva/wordle-ES-solutions#readme",
+  "dependencies": {
+    "axios": "0.26.1",
+    "typescript": "4.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23"
+  }
+}

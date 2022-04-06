@@ -1,0 +1,18 @@
+name: Add the latest wordle solution for ES edition
+
+on:
+  workflow_dispatch:
+    branches:
+      - master
+
+jobs:
+  addStatus:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js version 14.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+    - run: npm start
