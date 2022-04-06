@@ -17,3 +17,9 @@ jobs:
         node-version: 14.x
     - run: npm install
     - run: npm start
+    - run: |
+        git config user.name javigaralva
+        git config user.email javigaralva@gmail.com
+        git add .
+        git commit -m "Add Worldle solution for today"
+        git push
