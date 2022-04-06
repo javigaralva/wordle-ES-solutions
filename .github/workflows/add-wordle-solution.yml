@@ -3,7 +3,7 @@ name: Add the latest wordle solution for ES edition
 on:
   workflow_dispatch:
   schedule:
-    - cron: 15 * * * *
+    - cron: '30 * * * *'
 
 jobs:
   addSolution:
