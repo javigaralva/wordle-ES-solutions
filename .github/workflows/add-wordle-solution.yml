@@ -2,8 +2,8 @@ name: Add the latest wordle solution for ES edition
 
 on:
   workflow_dispatch:
-    branches:
-      - master
+  schedule:
+    - cron: 15 * * * *
 
 jobs:
   addSolution:
