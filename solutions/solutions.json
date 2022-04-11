@@ -1,11 +1,15 @@
 [
   {
     "gameId": 95,
-    "word": "ovulo"
+    "word": "óvulo"
   },
   {
     "gameId": 94,
     "word": "carne"
+  },
+  {
+    "gameId": 93,
+    "word": "crear"
   },
   {
     "gameId": 92,
