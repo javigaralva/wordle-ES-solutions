@@ -97,6 +97,7 @@ async function main() {
     }
 
     async function openBrowser() {
+        // add stealth plugin and use defaults (all evasion techniques)
         puppeteer.use( StealthPlugin() )
         browser = await puppeteer.launch( { headless: HEADLESS_BROWSER } )
     }
@@ -125,7 +126,6 @@ async function main() {
 
     async function loadDictionary( url: string ): Promise< string[] | undefined > {
         await openPage( url )
-        console.log( await page.content() )
         const cells = await page.$$( `main > div > div:nth-child(1) > div` )
         const numOfLetters = cells.length
         if( numOfLetters === 0 ) return
