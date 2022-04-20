@@ -1,4 +1,4 @@
-import { WordleType } from "./defs"
+import { WordleType } from "../defs"
 
 const WORDLE_START_DATE = {
     NORMAL  : new Date( '2022-01-06T04:00:00.000Z' ),
