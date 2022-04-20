@@ -45,7 +45,13 @@ async function main() {
     let browser: puppeteer.Browser
     let page: puppeteer.Page
 
-    await start()
+    try {
+        await start()
+    }
+    catch( error ) {
+        console.error( error )
+        await closeBrowser()
+    }
 
     async function start() {
 
@@ -70,7 +76,10 @@ async function main() {
             const result = await solveWordle( url )
             const { word } = result
 
-            if( !word ) return console.log( `❌ Error getting solution for gameId: ${gameId}` )
+            if( !word ) {
+                console.log( `❌ Error getting solution for gameId: ${gameId}` )
+                continue
+            }
 
             console.log( `🎉 Found word for Worlde (${wordleType}):`, result )
             const customWordleUrl = await getCustomWordleFor( word, useAccent )
