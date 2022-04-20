@@ -1,5 +1,7 @@
 import fs from 'fs/promises'
-import puppeteer from 'puppeteer'
+import { Browser, Page } from 'puppeteer'
+import puppeteer from 'puppeteer-extra'
+import StealthPlugin from 'puppeteer-extra-plugin-stealth'
 import { WordleType } from './defs'
 import { getTodaysGameId } from './services/getTodaysGameId'
 import { WordleSolver } from './solver/WordleSolver'
@@ -42,8 +44,8 @@ const WORDLES: { [ key in WordleType ]: WordleTypeDefinition } = {
 async function main() {
 
     const HEADLESS_BROWSER = true
-    let browser: puppeteer.Browser
-    let page: puppeteer.Page
+    let browser: Browser
+    let page: Page
 
     try {
         await start()
@@ -95,6 +97,7 @@ async function main() {
     }
 
     async function openBrowser() {
+        puppeteer.use( StealthPlugin() )
         browser = await puppeteer.launch( { headless: HEADLESS_BROWSER } )
     }
 
