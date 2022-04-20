@@ -2,7 +2,7 @@ import fs from 'fs/promises'
 import { getTodaysGameId } from './services/getTodaysGameId'
 import { getWordleSolution } from './services/getWordleSolution'
 
-const SOLUTIONS_FILE = `${__dirname}/../solutions/solutions.json`
+const SOLUTIONS_FILE = `${__dirname}/../solutions/solutions-normal.json`
 
 type GameSolution = {
     gameId: number
