@@ -1,9 +1,7 @@
-name: Add the latest wordle solution for ES edition
+name: Add the latest wordle solutions for ES edition (normal, accent and science edition)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: 58 * * * *
 
 jobs:
   addSolution:
