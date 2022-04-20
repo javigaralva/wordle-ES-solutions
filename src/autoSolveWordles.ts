@@ -105,8 +105,13 @@ async function main() {
     async function closeInstructions() {
         const startPage = await browser.newPage()
         await startPage.goto( WORDLE_BASE_URL, { waitUntil: 'networkidle2' } )
-        const consentButton = await startPage.waitForSelector( 'button[mode="primary"]' )
-        consentButton && await consentButton.click()
+        try {
+            const consentButton = await startPage.waitForSelector( 'button[mode="primary"]', { timeout: 5000 } )
+            consentButton && await consentButton.click()
+        }
+        catch( error ) {
+            console.log( '🚫 No consent button found' )
+        }
         await startPage.close()
    }
 
