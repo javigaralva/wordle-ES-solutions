@@ -1,0 +1,522 @@
+[
+  {
+    "gameId": 104,
+    "word": "ligar",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FOHm3v6aDspZYXsFatpfhzsBmyJ5DBC3U%3D&t=false"
+  },
+  {
+    "gameId": 103,
+    "word": "serio",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BNeaiMLcbVy8sIkaxHGH%2B%2F6s8r6aX9FNE%3D&t=false"
+  },
+  {
+    "gameId": 102,
+    "word": "fecha",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BEN%2BRQxsLQSNtY7CStwxxOxdukbAzaj1E%3D&t=false"
+  },
+  {
+    "gameId": 101,
+    "word": "tapiz",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FcJBdFyTT7qevfnbN8ksUThdgII02DEX8%3D&t=false"
+  },
+  {
+    "gameId": 100,
+    "word": "anexo",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BShBzHdw0FOopStVe6%2BqbmVgG3nbi4xvY%3D&t=false"
+  },
+  {
+    "gameId": 99,
+    "word": "parte",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1930i0Ijp2ehdcJmoqrVrAoFwlZ0J2Kdzc%3D&t=false"
+  },
+  {
+    "gameId": 98,
+    "word": "moral",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FGpYd2H0Up2dV1PFXAYgk3bABxeeTfIWA%3D&t=false"
+  },
+  {
+    "gameId": 97,
+    "word": "villa",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B04H%2FnKg8%2FAimuzlAfBbbeF%2BHQ%2BIfVhEI%3D&t=false"
+  },
+  {
+    "gameId": 96,
+    "word": "nivel",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2F%2FB3LFTop%2BDUfsMM9CMLIwBEheNAOxxCE%3D&t=false"
+  },
+  {
+    "gameId": 95,
+    "word": "óvulo",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18yjc60kxH%2F0%2BSpwy7ALhA9ATb9l1%2F2NoM%3D&t=false"
+  },
+  {
+    "gameId": 94,
+    "word": "carne",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FMY7Y7zvxsAHo9OvrSBu33WAGXstnz%2FPo%3D&t=false"
+  },
+  {
+    "gameId": 93,
+    "word": "crear",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19J5BmoXGkn6YVRxOqY4IsqxSRe4BU5HK4%3D&t=false"
+  },
+  {
+    "gameId": 92,
+    "word": "varón",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18g9FsLWuf9mBS74QDl2%2B6c1WGPUVN4mFA%3D&t=false"
+  },
+  {
+    "gameId": 91,
+    "word": "musgo",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FzhjqiL0Oo3fu9jhuAO4Es6pdWNI3h6rE%3D&t=false"
+  },
+  {
+    "gameId": 90,
+    "word": "curro",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BqjLWK1GYUsPoT40P8YlPVcXgv6E7CbVA%3D&t=false"
+  },
+  {
+    "gameId": 89,
+    "word": "duque",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19TSrl%2BdKJRHcxEYwu2aNaWSH9j5lcF%2Blc%3D&t=false"
+  },
+  {
+    "gameId": 88,
+    "word": "sudar",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19wi3tmHOp8khrAJoJqteEvqTSn1iRc2vM%3D&t=false"
+  },
+  {
+    "gameId": 87,
+    "word": "álbum",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18NrmyRLFm6aFsQKIgfX%2FMVfBlypHBCxm4%3D&t=false"
+  },
+  {
+    "gameId": 86,
+    "word": "doler",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B1C0m4%2FHoJTKzZIe5dc9y9NUurdrKo8Kc%3D&t=false"
+  },
+  {
+    "gameId": 85,
+    "word": "caída",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18RtGK%2Ft67k8xQoWg3cXu%2BTeDKoM1d%2FKmA%3D&t=false"
+  },
+  {
+    "gameId": 84,
+    "word": "mango",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19BmTsf839nPVQnpMUoqNa6%2Bl2SCevPASE%3D&t=false"
+  },
+  {
+    "gameId": 83,
+    "word": "ingle",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BIUGiJY1h%2BNKwz7z8vi7SfxCgXhVJbvBA%3D&t=false"
+  },
+  {
+    "gameId": 82,
+    "word": "ígneo",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BU99b7GONZiWL8kUTD1eSF8zxFguGclnA%3D&t=false"
+  },
+  {
+    "gameId": 81,
+    "word": "juego",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FehECWm1PgpzYjcNwf7tOInEDdnM3DSlg%3D&t=false"
+  },
+  {
+    "gameId": 80,
+    "word": "perra",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FUSfLD21LNh45zw0Tw%2BwtB%2Fw%2BLw8Pm4K4%3D&t=false"
+  },
+  {
+    "gameId": 79,
+    "word": "épica",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19DVA1j0Mxgtu6%2BJcnjQuejQPQs29zdlo8%3D&t=false"
+  },
+  {
+    "gameId": 78,
+    "word": "caber",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B6fPixwfExTpcpMwe4Aq9ik2qmZdthKNY%3D&t=false"
+  },
+  {
+    "gameId": 77,
+    "word": "éxito",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BHS6j68tTsTKyQp0y4%2BJYOl3AuI1E9OVs%3D&t=false"
+  },
+  {
+    "gameId": 76,
+    "word": "suelo",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18WoQITuOgTSGLQ7nKAZDEiUXZerWwXunU%3D&t=false"
+  },
+  {
+    "gameId": 75,
+    "word": "otoño",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B80XHYTibPvI%2FS2pd1Ga%2BeEKLU4vkHaw0%3D&t=false"
+  },
+  {
+    "gameId": 74,
+    "word": "suiza",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2F3BslXsFEACYnOrf9MNk9iXwVkGH3E7Vg%3D&t=false"
+  },
+  {
+    "gameId": 73,
+    "word": "ganso",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B4tIstrQRljKdmUEbFseadHCzZi9B%2BzVk%3D&t=false"
+  },
+  {
+    "gameId": 72,
+    "word": "risas",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19vbi87oUIRL5G%2B8bwi0SupDLSH%2BNKs%2Bgs%3D&t=false"
+  },
+  {
+    "gameId": 71,
+    "word": "latir",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BXK980I3%2FlRWLYejAH9VSIwzu2mpY3niY%3D&t=false"
+  },
+  {
+    "gameId": 70,
+    "word": "hurto",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FTYHJDHXGnT1wJsb7We0KWXjY52sRahtQ%3D&t=false"
+  },
+  {
+    "gameId": 69,
+    "word": "criar",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BxuA8TRJu81VpMj0E5TnCpp1j%2BYp4O2SE%3D&t=false"
+  },
+  {
+    "gameId": 68,
+    "word": "modas",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18OaGuh%2FDAbn0zYokmbc4F0EP2%2FUMPwCec%3D&t=false"
+  },
+  {
+    "gameId": 67,
+    "word": "acudo",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18qsXbDOw2uAEwxsE3HJK2OFj0kp0lrw2E%3D&t=false"
+  },
+  {
+    "gameId": 66,
+    "word": "chile",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19IcKhPUaNSQB20S5aT5u7YKXW06l6%2FJeI%3D&t=false"
+  },
+  {
+    "gameId": 65,
+    "word": "flota",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19KvLXSyPknYb1FXub5ii0LUxRMTztRtwc%3D&t=false"
+  },
+  {
+    "gameId": 64,
+    "word": "civil",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18q4qUC1YqcoEfRAQMACYVjJRntYURgRes%3D&t=false"
+  },
+  {
+    "gameId": 63,
+    "word": "malta",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18Uw%2Bcc7hDK6x%2Fonb2cdyIAdYVHTz95HPM%3D&t=false"
+  },
+  {
+    "gameId": 62,
+    "word": "sauna",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19rfo90JXC9jDOBMWgCsClv1H4I1yMgSMo%3D&t=false"
+  },
+  {
+    "gameId": 61,
+    "word": "mujer",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FB%2BXXB%2B1N0naPP2NDU89xtzJYGv%2BN28A0%3D&t=false"
+  },
+  {
+    "gameId": 60,
+    "word": "ciego",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B6ose99BQPTKyRwCG%2BuXXCT3yjsmG%2BzQ8%3D&t=false"
+  },
+  {
+    "gameId": 59,
+    "word": "salsa",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18pH8REotuhrOC3MsS07l4jfU9i4HU7gRE%3D&t=false"
+  },
+  {
+    "gameId": 58,
+    "word": "enano",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BmZPqyUulk2SUJYjdVxT00HUW3sIRsCmo%3D&t=false"
+  },
+  {
+    "gameId": 57,
+    "word": "libra",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19q2pmjUOmI2RlyrRzWr98T8TYuVIR3e%2Fk%3D&t=false"
+  },
+  {
+    "gameId": 56,
+    "word": "serio",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BVYK1ZoABMc7rQsAYutv6s%2BivQemN%2BzXI%3D&t=false"
+  },
+  {
+    "gameId": 55,
+    "word": "braza",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2F%2F2BWM97CV2%2BGOnxwrun%2FGerGFdOIdiKE%3D&t=false"
+  },
+  {
+    "gameId": 54,
+    "word": "macho",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FB1iUotYCpMa8xC2AhZFbTyvZQs9bsQjI%3D&t=false"
+  },
+  {
+    "gameId": 53,
+    "word": "lucir",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18EiwDDUvjBe4DR0ywPgWgqCJ2awv0K%2BMA%3D&t=false"
+  },
+  {
+    "gameId": 52,
+    "word": "fuego",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2F1dQKMISh%2BARXGphYNQiPhl95d%2FHVFv6s%3D&t=false"
+  },
+  {
+    "gameId": 51,
+    "word": "rotar",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BbFnD5Q7SKdYMu8VTi0k%2FDJJqxezYz%2FLM%3D&t=false"
+  },
+  {
+    "gameId": 50,
+    "word": "polar",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2F2ezR24yOvUZ8q0bXnzu8s%2BBNAUq5th1w%3D&t=false"
+  },
+  {
+    "gameId": 49,
+    "word": "huevo",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1851UI8NY5303l1lRz%2Bs6jZGInyLG3OASg%3D&t=false"
+  },
+  {
+    "gameId": 48,
+    "word": "papel",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18IOswNJ11iaBxtYkTnHqKdV3Ds%2F1QGQE4%3D&t=false"
+  },
+  {
+    "gameId": 47,
+    "word": "sucio",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19hohhV6lVNELo%2B%2B2EtGxtKmkdxh%2FM3iZo%3D&t=false"
+  },
+  {
+    "gameId": 46,
+    "word": "sexto",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BhKj12kRXlqCdI5wdAtW5e0yeIzzJqEEc%3D&t=false"
+  },
+  {
+    "gameId": 45,
+    "word": "radio",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19fNDNM6IL9HUcS62nok4jvVwZsnBEN2Ws%3D&t=false"
+  },
+  {
+    "gameId": 44,
+    "word": "nueve",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2F7rn2UG0be92VGNZV9TRpoWBryq5jDYxU%3D&t=false"
+  },
+  {
+    "gameId": 43,
+    "word": "soplo",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19Gid6BmkKmLdlTMAunFb13H8YWhKnLag4%3D&t=false"
+  },
+  {
+    "gameId": 42,
+    "word": "cesta",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX186oL4nsPdBA%2FOXsNvACyM0zv5XZ0Nv9eU%3D&t=false"
+  },
+  {
+    "gameId": 41,
+    "word": "mojar",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B5li0ZKe8a%2BhehqgWpVtFiT0%2FnLSeOGHA%3D&t=false"
+  },
+  {
+    "gameId": 40,
+    "word": "miope",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX197XvuGyMPBaD04FanwXWPQbPA0Ss8D%2Bow%3D&t=false"
+  },
+  {
+    "gameId": 39,
+    "word": "feliz",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2Fl9wF1AcFZ6oI6vLIXqv3a3Q85TBLg1Do%3D&t=false"
+  },
+  {
+    "gameId": 38,
+    "word": "corta",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18rxCcL5eVO12cQ%2B5lQrj6lBrhnG6cs84o%3D&t=false"
+  },
+  {
+    "gameId": 37,
+    "word": "rueda",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18w3YVO6sTXOu4EQR3BfRcPu6y3IIFeqCU%3D&t=false"
+  },
+  {
+    "gameId": 36,
+    "word": "llaga",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19COIRB5GAdR6D3EggceLks6%2BmDtyHlpOE%3D&t=false"
+  },
+  {
+    "gameId": 35,
+    "word": "litio",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FvYQPS0tETzdCuD3dVWFVdITU7Pm7LGVM%3D&t=false"
+  },
+  {
+    "gameId": 34,
+    "word": "albur",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FiKAR2w9SIOAycDY%2BpqtRC4XBR54PaL3g%3D&t=false"
+  },
+  {
+    "gameId": 33,
+    "word": "novio",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BhtHQ4uR8DhPs0KzvoBgWMIZ4LbNHLs%2BU%3D&t=false"
+  },
+  {
+    "gameId": 32,
+    "word": "besar",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B3CbptW%2BwVhPb1SYWi4Y%2BnHrFKBvS4uyU%3D&t=false"
+  },
+  {
+    "gameId": 31,
+    "word": "ganar",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19ME4u62K1xgeFwNd5tfGral6Ym8rJdzTs%3D&t=false"
+  },
+  {
+    "gameId": 30,
+    "word": "secta",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FNso3Oq0VbLkEuLQVTGIgUdsZzKI6C3LU%3D&t=false"
+  },
+  {
+    "gameId": 29,
+    "word": "apoyo",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19maFCHpeuYLJeJiBtNh2B4N9MLStqnG%2FA%3D&t=false"
+  },
+  {
+    "gameId": 28,
+    "word": "rocío",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19d2KbITrQTHpPcgT%2BRsc%2BXpXK5hnjUSWQ%3D&t=false"
+  },
+  {
+    "gameId": 27,
+    "word": "cerco",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19hyj9py34cOJSxNmU%2BUxOn4wizHm%2FZA3Q%3D&t=false"
+  },
+  {
+    "gameId": 26,
+    "word": "líder",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2Bkq0vUchdFWmTOA3PevFduRbnLNqNsKog%3D&t=false"
+  },
+  {
+    "gameId": 25,
+    "word": "nadal",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BEGeWToUf8PWWAICf0NNO6G3GNI%2FG2o1I%3D&t=false"
+  },
+  {
+    "gameId": 24,
+    "word": "mosca",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FnlAWnNNqGrR6WLoZ28dZ1dtNBpnHx2n0%3D&t=false"
+  },
+  {
+    "gameId": 23,
+    "word": "dieta",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX194UynNxmjrBeGvBvi%2Bd03Wxrx0sljFHoA%3D&t=false"
+  },
+  {
+    "gameId": 22,
+    "word": "nieto",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BnzZt0DHQAoPkJ%2Bvox4HV3vKeL%2FOgXWwI%3D&t=false"
+  },
+  {
+    "gameId": 21,
+    "word": "multa",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FtubK0dzezH%2BeksFaDH5RKc1l8p1ZZ1mU%3D&t=false"
+  },
+  {
+    "gameId": 20,
+    "word": "corto",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FW87R66MJ2sili4XpQQHW9dXxfkQYG9Vk%3D&t=false"
+  },
+  {
+    "gameId": 19,
+    "word": "bingo",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19y0RxcxG4nADPVowmquMpO7djDZWfRuic%3D&t=false"
+  },
+  {
+    "gameId": 18,
+    "word": "noche",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B4hoAD%2FdgBp5GzoBs60a8RNiz1mHtg7IA%3D&t=false"
+  },
+  {
+    "gameId": 17,
+    "word": "cuero",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18yfGgjDK6ex36QXRouQrIYBBFrpQSGdEE%3D&t=false"
+  },
+  {
+    "gameId": 16,
+    "word": "pieza",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18xbPbw%2FeYBQzE91c318DVsS%2Bwcz3lhmCg%3D&t=false"
+  },
+  {
+    "gameId": 15,
+    "word": "rubia",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2Bsq3WScqUqmp1zOLcKf8VPxZ2VKJ9WwXg%3D&t=false"
+  },
+  {
+    "gameId": 14,
+    "word": "avena",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18BMcScB2v%2FyiqTc9h%2FiV9qlRyJ2oP%2BhAk%3D&t=false"
+  },
+  {
+    "gameId": 13,
+    "word": "metal",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2Bq8hCN%2FyA%2FsJ3%2FfFevfN7xIikdL52YTF8%3D&t=false"
+  },
+  {
+    "gameId": 12,
+    "word": "obeso",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BdllEbtF4T5fbMYIn4A63%2BlA9iyJpPk4E%3D&t=false"
+  },
+  {
+    "gameId": 11,
+    "word": "cañón",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19C%2B%2F0njAc4dTbbpnuJI8BXCvrRBE1fylE%3D&t=false"
+  },
+  {
+    "gameId": 10,
+    "word": "falso",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19%2Ficb6rdOSwiT1g2x4jvJGhz66BHEz%2FnU%3D&t=false"
+  },
+  {
+    "gameId": 9,
+    "word": "vejez",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FbzdydjXJ6OiignwU4pjJjQ%2FkWOuFaodY%3D&t=false"
+  },
+  {
+    "gameId": 8,
+    "word": "abril",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX190V01fzBVSo1v7PfPAsg%2FVNbSzAiD8UCE%3D&t=false"
+  },
+  {
+    "gameId": 7,
+    "word": "mural",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19G5PsoNikUNxbaOq428Xdf%2BUokrDi3SQs%3D&t=false"
+  },
+  {
+    "gameId": 6,
+    "word": "razón",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2Feqxv8jjiVhdrZ6E2j9EMZUkE8PkMkj0Y%3D&t=false"
+  },
+  {
+    "gameId": 5,
+    "word": "disco",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19eF11qdeTN7ft7XmO%2FKUvmB%2FBNSXC9bXo%3D&t=false"
+  },
+  {
+    "gameId": 4,
+    "word": "flujo",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FUbW8mwuIV8PS6ip5mATfttAWUOmoxYUo%3D&t=false"
+  },
+  {
+    "gameId": 3,
+    "word": "titán",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BYD3cs%2BErmq2SwSYw6NuUu%2FrWsdl8M9Dg%3D&t=false"
+  },
+  {
+    "gameId": 2,
+    "word": "nieve",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FyrxCCIV9S4mr6RbayXRJUb8U5zdyKk%2FI%3D&t=false"
+  },
+  {
+    "gameId": 1,
+    "word": "canto",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2Bfi9LN6y%2BEKgLmUbBY2lp59%2B1WbhtWjGY%3D&t=false"
+  }
+]

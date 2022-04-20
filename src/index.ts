@@ -2,7 +2,7 @@ import fs from 'fs/promises'
 import { getTodaysGameId } from './services/getTodaysGameId'
 import { getWordleSolution } from './services/getWordleSolution'
 
-const SOLUTIONS_FILE = `${__dirname}/../solutions/solutions.json`
+const SOLUTIONS_FILE = `${__dirname}/../solutions/solutions-normal.json`
 
 type GameSolution = {
     gameId: number
@@ -12,7 +12,7 @@ type GameSolution = {
 async function main() {
     const solutions: GameSolution[] = JSON.parse( await fs.readFile( SOLUTIONS_FILE, 'utf8' ) )
 
-    const gameId = getTodaysGameId()
+    const gameId = getTodaysGameId( 'NORMAL' )
 
     const existsSolution = solutions.some( solution => solution.gameId === gameId )
     if( existsSolution ) return console.log( `✅ Solution for gameId: ${gameId} already exists` )
