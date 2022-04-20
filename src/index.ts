@@ -12,7 +12,7 @@ type GameSolution = {
 async function main() {
     const solutions: GameSolution[] = JSON.parse( await fs.readFile( SOLUTIONS_FILE, 'utf8' ) )
 
-    const gameId = getTodaysGameId()
+    const gameId = getTodaysGameId( 'NORMAL' )
 
     const existsSolution = solutions.some( solution => solution.gameId === gameId )
     if( existsSolution ) return console.log( `✅ Solution for gameId: ${gameId} already exists` )

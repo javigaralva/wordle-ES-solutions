@@ -1,0 +1,1 @@
+export type WordleType = 'NORMAL' | 'ACCENT' | 'SCIENCE'
