@@ -41,7 +41,7 @@ const WORDLES: { [ key in WordleType ]: WordleTypeDefinition } = {
 
 async function main() {
 
-    const HEADLESS_BROWSER = false
+    const HEADLESS_BROWSER = true
     let browser: puppeteer.Browser
     let page: puppeteer.Page
 
