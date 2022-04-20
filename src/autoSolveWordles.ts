@@ -101,6 +101,8 @@ async function main() {
     async function closeInstructions() {
         const startPage = await browser.newPage()
         await startPage.goto( WORDLE_BASE_URL, { waitUntil: 'networkidle2' } )
+        console.log( 'Waiting for a while...' )
+        await startPage.waitForTimeout( 10_000 )
         await startPage.close()
    }
 
