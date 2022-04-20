@@ -120,6 +120,7 @@ async function main() {
 
     async function loadDictionary( url: string ): Promise< string[] | undefined > {
         await openPage( url )
+        console.log( await page.content() )
         const cells = await page.$$( `main > div > div:nth-child(1) > div` )
         const numOfLetters = cells.length
         if( numOfLetters === 0 ) return
