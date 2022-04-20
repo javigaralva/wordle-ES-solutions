@@ -170,6 +170,10 @@ async function main() {
             currentRound++
             totalRounds++
 
+            if( totalRounds > 12 ) {
+                console.log( `❌ No solution found in 12 rounds` )
+                break
+            }
             if( wordsWithMoreLetters.length === 0 ) {
                 console.log( `❌ No words found in round ${totalRounds}` )
                 break
