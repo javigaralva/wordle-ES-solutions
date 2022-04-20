@@ -109,10 +109,11 @@ async function main() {
         await browser.close()
     }
 
-    async function loadDictionary( url: string ): Promise<string[]> {
+    async function loadDictionary( url: string ): Promise< string[] | undefined > {
         await openPage( url )
         const cells = await page.$$( `main > div > div:nth-child(1) > div` )
         const numOfLetters = cells.length
+        if( numOfLetters === 0 ) return
         const { default: dictionary }: { default: string[] } = await import( `./dictionaries/words-${numOfLetters}-es.json` )
         return dictionary
     }
@@ -120,8 +121,9 @@ async function main() {
     async function solveWordle( wordleUrl: string) {
 
         const dictionary = await loadDictionary( wordleUrl )
-        const itHasAccents = await hasAccents()
+        if( !dictionary ) return { round: 0, word: undefined }
 
+        const itHasAccents = await hasAccents()
         const wordleSolver = new WordleSolver( dictionary )
 
         let word = sortWordsWithMoreLetters( dictionary )[ 0 ]
