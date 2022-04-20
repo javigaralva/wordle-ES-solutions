@@ -21,6 +21,7 @@
   "homepage": "https://github.com/javigaralva/wordle-ES-solutions#readme",
   "dependencies": {
     "axios": "0.26.1",
+    "puppeteer": "13.6.0",
     "typescript": "4.6.3"
   },
   "devDependencies": {
