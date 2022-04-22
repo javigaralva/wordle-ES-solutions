@@ -47,6 +47,14 @@ async function main() {
     let browser: Browser
     let page: Page
 
+    const NUM_OF_ROUNDS = 6
+
+    const RGB_CELL_COLORS = {
+        CORRECT : 'rgb(106, 170, 100)',
+        PRESENT : 'rgb(201, 180, 88)',
+        ABSENT  : 'rgb(120, 124, 126)'
+    }
+
     try {
         await start()
     }
@@ -131,8 +139,8 @@ async function main() {
 
     async function loadDictionary( url: string ): Promise< string[] | undefined > {
         await openPage( url )
-        const cells = await page.$$( `main > div > div:nth-child(1) > div` )
-        const numOfLetters = cells.length
+        const cells = await page.$$( `.react-card-flip` )
+        const numOfLetters = cells.length / NUM_OF_ROUNDS
         if( numOfLetters === 0 ) return
         const { default: dictionary }: { default: string[] } = await import( `./dictionaries/words-${numOfLetters}-es.json` )
         return dictionary
@@ -147,11 +155,11 @@ async function main() {
         const wordleSolver = new WordleSolver( dictionary )
 
         let word = sortWordsWithMoreLetters( dictionary )[ 0 ]
-        let currentRound = 7
+        let currentRound = NUM_OF_ROUNDS + 1
         let totalRounds = 1
         let solution
         while( !solution ) {
-            if( currentRound > 6 ) {
+            if( currentRound > NUM_OF_ROUNDS ) {
                 await startNewWordle( wordleUrl )
                 currentRound = 1
             }
@@ -170,8 +178,8 @@ async function main() {
             currentRound++
             totalRounds++
 
-            if( totalRounds > 12 ) {
-                console.log( `❌ No solution found in 12 rounds` )
+            if( totalRounds > NUM_OF_ROUNDS * 2 ) {
+                console.log( `❌ No solution found in ${NUM_OF_ROUNDS * 2} rounds` )
                 break
             }
             if( wordsWithMoreLetters.length === 0 ) {
@@ -203,14 +211,16 @@ async function main() {
         let invalidLetters = ''
         for( let letterIndex = 1; letterIndex <= word.length; letterIndex++ ) {
             const letter = word[ letterIndex - 1 ]
-            const element = await page.$( `main > div > div:nth-child(${round}) > :nth-child(${letterIndex}) .react-card-back > div` )
-            if( !element ) throw new Error( `Can't find the cells for round ${round}` )
-            const className = await element.getProperty( 'className' )
-            const classNameValues = ( await className.jsonValue() as string ).split( ' ' )
+            const cellStateColor = await page.evaluate( ( { round, letterIndex } ) => {
+                const cellStateElement = document.querySelector( `div > div:nth-child(${round}) > div:nth-child(${letterIndex}) > div > div.react-card-back > div` )
+                return cellStateElement && window.getComputedStyle( cellStateElement ).getPropertyValue( 'background-color' )
+            }, { round, letterIndex } )
 
-            validLetters += classNameValues.includes( 'bg-correct' ) ? letter : '-'
-            notInPlaceLetters += classNameValues.includes( 'bg-present' ) ? letter : '-'
-            invalidLetters += classNameValues.includes( 'bg-absent' ) ? letter : ''
+            if( !cellStateColor ) throw new Error( `Can't find the cells for round ${round}` )
+
+            validLetters      += cellStateColor === RGB_CELL_COLORS.CORRECT ? letter : '-'
+            notInPlaceLetters += cellStateColor === RGB_CELL_COLORS.PRESENT ? letter : '-'
+            invalidLetters    += cellStateColor === RGB_CELL_COLORS.ABSENT  ? letter : ''
         }
         return { validLetters, notInPlaceLetters, invalidLetters }
     }
