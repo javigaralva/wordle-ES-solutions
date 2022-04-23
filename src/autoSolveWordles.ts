@@ -200,6 +200,7 @@ async function main() {
     }
 
     async function startNewWordle( wordleUrl: string ) {
+        await page.evaluate( () => localStorage.setItem( 'board', '' ) )
         await openPage( wordleUrl )
     }
 
