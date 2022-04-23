@@ -130,7 +130,7 @@ async function main() {
     }
 
     async function closePage() {
-        page && page.isClosed() && await page.close()
+        page && !page.isClosed() && await page.close()
     }
 
     async function closeBrowser() {
