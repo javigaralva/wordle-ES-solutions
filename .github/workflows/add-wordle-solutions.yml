@@ -3,7 +3,7 @@ name: Add the latest wordle solutions for ES edition (normal, accent and science
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 * * * *
+    - cron: 58 * * * *
 
 jobs:
   addSolution:
