@@ -48,6 +48,7 @@ async function main() {
     let page: Page
 
     const NUM_OF_ROUNDS = 6
+    const MIN_LETTERS_TO_CREATE_WORDLE = 5
 
     const RGB_CELL_COLORS = {
         CORRECT : 'rgb(106, 170, 100)',
@@ -92,7 +93,10 @@ async function main() {
             }
 
             console.log( `🎉 Found word for Worlde (${wordleType}):`, result )
-            const customWordleUrl = await getCustomWordleFor( word, useAccent )
+
+            let customWordleUrl = ( result.word?.length ?? 0 ) >= MIN_LETTERS_TO_CREATE_WORDLE
+                ? await getCustomWordleFor( word, useAccent )
+                : ''
 
             solutions.push( { gameId, word, url: customWordleUrl } )
             solutions.sort( ( a, b ) => b.gameId - a.gameId )
