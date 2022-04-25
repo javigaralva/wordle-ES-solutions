@@ -156,7 +156,11 @@ async function main() {
         if( !dictionary ) return { round: 0, word: undefined }
 
         const itHasAccents = await hasAccents()
-        const wordleSolver = new WordleSolver( dictionary )
+
+        const dualDictionary = dictionary.map( word => ( [ word, normalizeAccents( word ) ] ) )
+        const dictionaryToUse = itHasAccents ? dictionary : dualDictionary.map( ( [ _, word ] ) => word )
+
+        const wordleSolver = new WordleSolver( dictionaryToUse )
 
         let word = sortWordsWithMoreLetters( dictionary )[ 0 ]
         let currentRound = NUM_OF_ROUNDS + 1
@@ -170,7 +174,7 @@ async function main() {
             const roundResult = await playRound( currentRound, itHasAccents ? word : normalizeAccents( word ) )
 
             if( !roundResult.validLetters.includes( '-' ) ) {
-                solution = word
+                solution = itHasAccents ? word : findWordInDualDictionary( word, dualDictionary )
                 console.log( `✅ Word found in round ${totalRounds}: ${solution}` )
                 break
             }
@@ -191,7 +195,8 @@ async function main() {
                 break
             }
             if( wordsWithMoreLetters.length === 1 ) {
-                solution = wordsWithMoreLetters[ 0 ]
+                const theWord = wordsWithMoreLetters[ 0 ]
+                solution = itHasAccents ? theWord : findWordInDualDictionary( theWord, dualDictionary )
                 console.log( `✅ Word found in round ${totalRounds}: ${solution}` )
                 break
             }
@@ -259,6 +264,10 @@ async function main() {
             .map( word => ( { word, letters: [ ...new Set( word.split( '' ) ) ].length } ) )
             .sort( ( a, b ) => b.letters - a.letters )
             .map( ( { word } ) => word )
+    }
+
+    function findWordInDualDictionary( word: string, dictionary: string[][] ) {
+        return dictionary.find( ( [ _, w ] ) => w === word )?.[ 0 ]
     }
 
     async function getCustomWordleFor( word: string, useAccent: boolean ) {
