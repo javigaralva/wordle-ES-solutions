@@ -1,5 +1,10 @@
 [
   {
+    "gameId": 100,
+    "word": "fétido",
+    "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19iaffoRPIEx2Rk91a0rz1YiLojM5e7RTM%3D&t=true"
+  },
+  {
     "gameId": 99,
     "word": "halcón",
     "url": "https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19kVSc4ww34UBkBwLAwfzeNb4Gaf8QfVyk%3D&t=true"
