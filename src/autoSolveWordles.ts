@@ -4,7 +4,7 @@ import puppeteer from 'puppeteer-extra'
 import StealthPlugin from 'puppeteer-extra-plugin-stealth'
 import { WordleType } from './defs'
 import { getTodaysGameId } from './services/getTodaysGameId'
-import { WordleSolver } from './solver/WordleSolver'
+import WordleSolver from './solver/WordleSolver'
 
 const WORDLE_BASE_URL = 'https://wordle.danielfrg.com'
 const WORDLE_CREATE_NEW_URL = `${WORDLE_BASE_URL}/crear`
