@@ -92,7 +92,7 @@ async function main() {
                 continue
             }
 
-            console.log( `🎉 Found word for Worlde (${wordleType}):`, result )
+            console.log( `🎉 Found word for Wordle (${wordleType}):`, result )
 
             let customWordleUrl = ( result.word?.length ?? 0 ) >= MIN_LETTERS_TO_CREATE_WORDLE
                 ? await getCustomWordleFor( word, useAccent )
