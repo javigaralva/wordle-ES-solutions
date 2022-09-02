@@ -162,7 +162,7 @@ async function main() {
 
         const wordleSolver = new WordleSolver( dictionaryToUse )
 
-        let word = sortWordsWithMoreLetters( dictionary )[ 0 ]
+        let word = selectWord( sortWordsWithMoreLetters( dictionary ) )
         let currentRound = NUM_OF_ROUNDS + 1
         let totalRounds = 1
         let solution
@@ -182,7 +182,7 @@ async function main() {
             const possibleWords = wordleSolver.solve( roundResult )
             const wordsWithMoreLetters = sortWordsWithMoreLetters( possibleWords )
 
-            word = wordsWithMoreLetters[ 0 ]
+            word = selectWord( wordsWithMoreLetters )
             currentRound++
             totalRounds++
 
@@ -292,6 +292,17 @@ async function main() {
         }
     }
 
+    function selectWord( words: string[] ) {
+        return pickRandomlyFromFirstElements( words )
+    }
+
+    function pickRandomlyFromFirstElements<T>( array: T[], numOfFirstElementsToPick: number = 20 ): T {
+        return random( array.slice( 0, numOfFirstElementsToPick ) )
+    }
+
+    function random<T>( array: T[] ) {
+        return array[ Math.floor( Math.random() * array.length ) ]
+    }
 }
 
 main()
