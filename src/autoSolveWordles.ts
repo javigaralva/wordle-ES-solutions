@@ -6,8 +6,9 @@ import { WordleType } from './defs'
 import { getTodaysGameId } from './services/getTodaysGameId'
 import WordleSolver from './solver/WordleSolver'
 
-const WORDLE_BASE_URL = 'https://wordle.danielfrg.com'
+const WORDLE_BASE_URL = 'https://lapalabradeldia.com'
 const WORDLE_CREATE_NEW_URL = `${WORDLE_BASE_URL}/crear`
+const WORDLE_CUSTOM_URL = `${WORDLE_BASE_URL}/personalizada`
 
 type GameSolution = {
     gameId: number
@@ -43,7 +44,7 @@ const WORDLES: { [ key in WordleType ]: WordleTypeDefinition } = {
 
 async function main() {
 
-    const HEADLESS_BROWSER = true
+    const HEADLESS_BROWSER = false
     let browser: Browser
     let page: Page
 
@@ -51,9 +52,9 @@ async function main() {
     const MIN_LETTERS_TO_CREATE_WORDLE = 5
 
     const RGB_CELL_COLORS = {
-        CORRECT : 'rgb(106, 170, 100)',
-        PRESENT : 'rgb(201, 180, 88)',
-        ABSENT  : 'rgb(120, 124, 126)'
+        CORRECT : 'rgb(67, 160, 71)',
+        PRESENT : 'rgb(228, 168, 29)',
+        ABSENT  : 'rgb(117, 117, 117)'
     }
 
     try {
@@ -118,7 +119,7 @@ async function main() {
         const startPage = await browser.newPage()
         await startPage.goto( WORDLE_BASE_URL, { waitUntil: 'networkidle2' } )
         try {
-            const consentButton = await startPage.waitForSelector( 'button[mode="primary"]', { timeout: 5000 } )
+            const consentButton = await startPage.waitForSelector( 'button[aria-label="Close"]', { timeout: 5000 } )
             consentButton && (await consentButton.click())
         }
         catch( error ) {
@@ -284,7 +285,7 @@ async function main() {
             await element.click()
         }
         {
-            const element = await page.waitForSelector( '[href*="https://wordle.danielfrg.com/personalizada"]' )
+            const element = await page.waitForSelector( `[href*="${WORDLE_CUSTOM_URL}"]` )
             if( !element ) throw new Error( `button to send word not found` )
             const href = await element.getProperty( 'href' )
             const url = await href.jsonValue() as string
