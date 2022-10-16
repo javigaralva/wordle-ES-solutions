@@ -122,7 +122,7 @@ async function main() {
     async function closeInstructions() {
         DEBUG && console.log( 'Closing instructions. Opening a new page...' )
         const startPage = await browser.newPage()
-        await startPage.goto( WORDLE_BASE_URL, { waitUntil: 'networkidle2' } )
+        await startPage.goto( WORDLE_BASE_URL, { waitUntil: 'domcontentloaded' } )
         try {
             DEBUG && console.log( 'Trying to get the close button and clicking it...' )
             const consentButton = await startPage.waitForSelector( 'button[aria-label="Close"]', { timeout: 5000 } )
@@ -138,7 +138,7 @@ async function main() {
     async function openPage( url: string ) {
         await closePage()
         page = await browser.newPage()
-        await page.goto( url, { waitUntil: 'networkidle2' } )
+        await page.goto( url, { waitUntil: 'domcontentloaded' } )
     }
 
     async function closePage() {
