@@ -74,6 +74,8 @@ async function main() {
         await closeInstructions()
 
         for( const type in WORDLES ) {
+            console.log( '\n' )
+
             const wordleType = type as WordleType
             const { url, solutionsFile, useAccent } = WORDLES[ wordleType ]
             const gameId = getTodaysGameId( wordleType )
@@ -97,6 +99,7 @@ async function main() {
 
             console.log( `🎉 Found word for Wordle (${wordleType}):`, result )
 
+            console.log( `🏗️ Creating custom game for gameId ${gameId} and word ${word}...` )
             let customWordleUrl = ( result.word?.length ?? 0 ) >= MIN_LETTERS_TO_CREATE_WORDLE
                 ? await getCustomWordleFor( word, useAccent )
                 : ''
