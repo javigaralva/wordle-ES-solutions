@@ -10,6 +10,8 @@ const WORDLE_BASE_URL = 'https://lapalabradeldia.com'
 const WORDLE_CREATE_NEW_URL = `${WORDLE_BASE_URL}/crear`
 const WORDLE_CUSTOM_URL = `${WORDLE_BASE_URL}/personalizada`
 
+const DEBUG = true
+
 type GameSolution = {
     gameId: number
     word: string
@@ -111,20 +113,25 @@ async function main() {
 
     async function openBrowser() {
         // add stealth plugin and use defaults (all evasion techniques)
+        DEBUG && console.log( 'Opening browser...' )
         puppeteer.use( StealthPlugin() )
         browser = await puppeteer.launch( { headless: HEADLESS_BROWSER } )
+        DEBUG && console.log( 'Browser opened.' )
     }
 
     async function closeInstructions() {
+        DEBUG && console.log( 'Closing instructions. Opening a new page...' )
         const startPage = await browser.newPage()
         await startPage.goto( WORDLE_BASE_URL, { waitUntil: 'networkidle2' } )
         try {
+            DEBUG && console.log( 'Trying to get the close button and clicking it...' )
             const consentButton = await startPage.waitForSelector( 'button[aria-label="Close"]', { timeout: 5000 } )
             consentButton && (await consentButton.click())
         }
         catch( error ) {
             console.log( '🚫 No consent button found' )
         }
+        DEBUG && console.log( 'Closing the page...' )
         await startPage.close()
    }
 
@@ -143,11 +150,16 @@ async function main() {
     }
 
     async function loadDictionary( url: string ): Promise< string[] | undefined > {
+        DEBUG && console.log( `Loading dictionary. Opening page ${url}`)
         await openPage( url )
+        DEBUG && console.log( `Page ${url} opened.`)
+        DEBUG && console.log( `Try to get the cells...`)
         const cells = await page.$$( `.react-card-flip` )
+        DEBUG && console.log( `Cells get`)
         const numOfLetters = cells.length / NUM_OF_ROUNDS
         if( numOfLetters === 0 ) return
         const { default: dictionary }: { default: string[] } = await import( `./dictionaries/words-${numOfLetters}-es.json` )
+        DEBUG && console.log( 'Dictionary loaded' )
         return dictionary
     }
 
@@ -210,8 +222,13 @@ async function main() {
     }
 
     async function startNewWordle( wordleUrl: string ) {
+        DEBUG && console.log( 'Starting new wordle...')
+        DEBUG && console.log( 'Resetting the board...')
         await page.evaluate( () => localStorage.setItem( 'board', '' ) )
+        DEBUG && console.log( 'Board reset.')
+        DEBUG && console.log( `Open page ${wordleUrl}`)
         await openPage( wordleUrl )
+        DEBUG && console.log( `Page ${wordleUrl} opened.`)
     }
 
     async function playRound( round: number, word: string ) {
@@ -237,8 +254,11 @@ async function main() {
     }
 
     async function hasAccents() {
+        DEBUG && console.log( 'Trying to know if wordle has accents...')
         const element = await page.$( `[aria-label=á]` )
-        return Boolean( element )
+        const itHasAccents = Boolean( element )
+        DEBUG && console.log( itHasAccents ? 'It has accents' : 'It has not accents' )
+        return itHasAccents
     }
     async function inputWord( word: string ) {
         for( const letter of word ) {
