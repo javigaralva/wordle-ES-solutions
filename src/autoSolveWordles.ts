@@ -128,7 +128,7 @@ async function main() {
         await startPage.goto( WORDLE_BASE_URL, { waitUntil: 'domcontentloaded' } )
         try {
             DEBUG && console.log( 'Trying to get the close button and clicking it...' )
-            const consentButton = await startPage.waitForSelector( 'button[aria-label="Close"]', { timeout: 5000 } )
+            const consentButton = await startPage.waitForSelector( 'button[aria-label="Consent"]', { timeout: 5000 } )
             consentButton && (await consentButton.click())
         }
         catch( error ) {
@@ -157,7 +157,7 @@ async function main() {
         await openPage( url )
         DEBUG && console.log( `Page ${url} opened.`)
         DEBUG && console.log( `Try to get the cells...`)
-        const cells = await page.$$( `.react-card-flip` )
+        const cells = await page.$$( `.react-card-flipper` )
         DEBUG && console.log( `Cells get`)
         const numOfLetters = cells.length / NUM_OF_ROUNDS
         if( numOfLetters === 0 ) return
