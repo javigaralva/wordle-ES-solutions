@@ -126,17 +126,29 @@ async function main() {
         DEBUG && console.log( 'Closing instructions. Opening a new page...' )
         const startPage = await browser.newPage()
         await startPage.goto( WORDLE_BASE_URL, { waitUntil: 'domcontentloaded' } )
-        try {
-            DEBUG && console.log( 'Trying to get the close button and clicking it...' )
-            const consentButton = await startPage.waitForSelector( 'button[aria-label="Consent"]', { timeout: 5000 } )
-            consentButton && (await consentButton.click())
-        }
-        catch( error ) {
-            console.log( '🚫 No consent button found' )
-        }
+        await clickOnConsentButton({ page: startPage })
         DEBUG && console.log( 'Closing the page...' )
         await startPage.close()
-   }
+    }
+
+    async function clickOnConsentButton( { page }: { page: Page } ) {
+        const CONSENT_BUTTONS_ARIA_LABELS = [
+            "Close",   // original
+            "Consent"  // new one
+        ]
+        for( const ariaLabel of CONSENT_BUTTONS_ARIA_LABELS ) {
+            try {
+                DEBUG && console.log( `Trying to get the close button [${ariaLabel}] and clicking it...` )
+                const consentButton = await page.waitForSelector( `button[aria-label="${ariaLabel}"]`, { timeout: 5000 } )
+                consentButton && (await consentButton.click())
+                console.log( 'Consent button found and clicked.' )
+                return
+            }
+            catch( error ) {
+                console.log( `🚫 No consent button found [${ariaLabel}]` )
+            }
+        }
+    }
 
     async function openPage( url: string ) {
         await closePage()
@@ -157,13 +169,29 @@ async function main() {
         await openPage( url )
         DEBUG && console.log( `Page ${url} opened.`)
         DEBUG && console.log( `Try to get the cells...`)
-        const cells = await page.$$( `.react-card-flipper` )
-        DEBUG && console.log( `Cells get`)
-        const numOfLetters = cells.length / NUM_OF_ROUNDS
+        const numberOfCells = await getNumberOfCells()
+        DEBUG && console.log( `Cells get: `, numberOfCells )
+        const numOfLetters = numberOfCells / NUM_OF_ROUNDS
         if( numOfLetters === 0 ) return
         const { default: dictionary }: { default: string[] } = await import( `./dictionaries/words-${numOfLetters}-es.json` )
         DEBUG && console.log( 'Dictionary loaded' )
         return dictionary
+    }
+
+    async function getNumberOfCells() {
+        // try to get one of the selectors
+        const CELL_SELECTORS = [
+            '.react-card-flip',     // original
+            '.react-card-flipper',  // new one
+        ]
+        for( const selector of CELL_SELECTORS ) {
+            const cells = await page.$$( selector )
+            if(cells.length > 0) {
+                return cells.length
+            }
+        }
+
+        return 0
     }
 
     async function solveWordle( wordleUrl: string) {
