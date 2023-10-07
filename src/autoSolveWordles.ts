@@ -185,6 +185,7 @@ async function main() {
             '.react-card-flipper',  // new one
         ]
         for( const selector of CELL_SELECTORS ) {
+            await page.waitForSelector( selector )
             const cells = await page.$$( selector )
             if(cells.length > 0) {
                 return cells.length
@@ -285,17 +286,26 @@ async function main() {
     }
 
     async function hasAccents() {
-        DEBUG && console.log( 'Trying to know if wordle has accents...')
-        const element = await page.$( `[aria-label=á]` )
-        const itHasAccents = Boolean( element )
-        DEBUG && console.log( itHasAccents ? 'It has accents' : 'It has not accents' )
-        return itHasAccents
+        try {
+            DEBUG && console.log( 'Trying to know if wordle has accents...')
+            await page.waitForSelector( `[aria-label=á]`, { timeout: 1000 } )
+            DEBUG && console.log( 'It has accents' )
+            return true
+        }
+        catch( ex ) {
+            DEBUG && console.log( 'It has not accents')
+            return false
+        }
     }
     async function inputWord( word: string ) {
         for( const letter of word ) {
             await page.waitForTimeout( 100 )
-            const element = await page.$( `[aria-label=${letter}]` )
-            if( !element ) throw new Error( `letter ${letter} not found` )
+            const letterSelector = `[aria-label=${letter}]`
+            await page.waitForSelector( letterSelector )
+            const element = await page.$( letterSelector )
+            if( !element ) {
+                throw new Error( `letter ${letter} not found` )
+            }
             await element.click()
         }
         const element = await page.$( '[aria-label="procesar palabra"]' )
