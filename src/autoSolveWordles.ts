@@ -131,6 +131,17 @@ async function main() {
         await startPage.close()
     }
 
+    async function closeInstructions() {
+        try {
+	        DEBUG && console.log( `Closing instructions` )
+	        const button = await page.waitForSelector('div[role=dialog] button', { timeout: 1000 })
+	        button && (await button.click())
+	
+        } catch (error) {
+            DEBUG && console.log( `No instruction button found` )
+        }    
+    }
+
     async function clickOnConsentButton( { page }: { page: Page } ) {
         const CONSENT_BUTTONS_ARIA_LABELS = [
             "Close",   // original
@@ -168,6 +179,7 @@ async function main() {
         DEBUG && console.log( `Loading dictionary. Opening page ${url}`)
         await openPage( url )
         DEBUG && console.log( `Page ${url} opened.`)
+        await closeInstructions()
         DEBUG && console.log( `Try to get the cells...`)
         const numberOfCells = await getNumberOfCells()
         DEBUG && console.log( `Cells get: `, numberOfCells )
@@ -260,6 +272,7 @@ async function main() {
         DEBUG && console.log( 'Board reset.')
         DEBUG && console.log( `Open page ${wordleUrl}`)
         await openPage( wordleUrl )
+        await closeInstructions()
         DEBUG && console.log( `Page ${wordleUrl} opened.`)
     }
 
