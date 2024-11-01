@@ -321,7 +321,7 @@ async function main() {
             }
             await element.click()
         }
-        const element = await page.$( '[aria-label="procesar palabra"]' )
+        const element = await page.$( '[aria-label="procesar palabrakey"]' )
         if( !element ) throw new Error( `button to send word not found` )
         await element.click()
     }
@@ -354,7 +354,7 @@ async function main() {
             await element.click()
         }
         {
-            const element = await page.waitForSelector( '[aria-label="procesar palabra"]' )
+            const element = await page.waitForSelector( '[aria-label="procesar palabrakey"]' )
             if( !element ) throw new Error( `button to send word not found` )
             await element.click()
         }
