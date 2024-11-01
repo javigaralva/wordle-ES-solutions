@@ -71,7 +71,7 @@ async function main() {
 
         console.log( 'Starting...' )
         await openBrowser()
-        await closeInstructions()
+        await closeConsent()
 
         for( const type in WORDLES ) {
             console.log( '\n' )
@@ -122,8 +122,8 @@ async function main() {
         DEBUG && console.log( 'Browser opened.' )
     }
 
-    async function closeInstructions() {
-        DEBUG && console.log( 'Closing instructions. Opening a new page...' )
+    async function closeConsent() {
+        DEBUG && console.log( 'Closing consent. Opening a new page...' )
         const startPage = await browser.newPage()
         await startPage.goto( WORDLE_BASE_URL, { waitUntil: 'domcontentloaded' } )
         await clickOnConsentButton({ page: startPage })
