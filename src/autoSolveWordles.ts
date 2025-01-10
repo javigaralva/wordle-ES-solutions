@@ -118,7 +118,7 @@ async function main() {
         // add stealth plugin and use defaults (all evasion techniques)
         DEBUG && console.log( 'Opening browser...' )
         puppeteer.use( StealthPlugin() )
-        browser = await puppeteer.launch( { headless: HEADLESS_BROWSER } )
+        browser = await puppeteer.launch( { args: ['--no-sandbox', '--disable-setuid-sandbox'], headless: HEADLESS_BROWSER } )
         DEBUG && console.log( 'Browser opened.' )
     }
 
