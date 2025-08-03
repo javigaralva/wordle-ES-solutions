@@ -127,14 +127,51 @@ async function main() {
     }
 
     async function closeInstructions() {
-        try {
-	        DEBUG && console.log( `Closing instructions` )
-	        const button = await page.waitForSelector('div[role=dialog] button', { timeout: 1000 })
-	        button && (await button.click())
-	
-        } catch (error) {
-            DEBUG && console.log( `No instruction button found` )
-        }    
+        const selectors = [
+            'div[role=dialog] button',
+        ]
+        
+        await page.waitForTimeout( 2000 ) 
+
+        for(const selector of selectors) {
+            try {
+                DEBUG && console.log( `Trying to close instructions with selector: ${selector}` )
+                
+                // Wait for the element to be present
+                await page.waitForSelector( selector, { timeout: 2000 } )
+                
+                // Try different click methods
+                try {
+                    // Method 1: Direct page.click (most reliable)
+                    await page.click( selector )
+                    DEBUG && console.log( `Successfully clicked with page.click(): ${selector}` )
+                    
+                    return
+                } catch (clickError) {
+                    DEBUG && console.log( `page.click() failed, trying evaluate click...` )
+                    
+                    // Method 2: Evaluate click in browser context
+                    const clicked = await page.evaluate((sel) => {
+                        const element = document.querySelector(sel);
+                        if (element && element instanceof HTMLElement) {
+                            element.click();
+                            return true;
+                        }
+                        return false;
+                    }, selector);
+                    
+                    if (clicked) {
+                        DEBUG && console.log( `Successfully clicked with evaluate(): ${selector}` )
+                        return
+                    }
+                }
+                
+            } catch (error) {
+                DEBUG && console.log( `No instruction button found with selector: ${selector}` )
+            }
+        }
+        
+        DEBUG && console.log( 'No instruction dialog found to close' )
     }
 
     async function clickOnConsentButton( { page }: { page: Page } ) {
