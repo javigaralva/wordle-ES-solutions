@@ -37,11 +37,6 @@ const WORDLES: { [ key in WordleType ]: WordleTypeDefinition } = {
         useAccent: true,
         solutionsFile: `${__dirname}/../solutions/solutions-accent.json`,
     },
-    SCIENCE: {
-        url: `${WORDLE_BASE_URL}/ciencia`,
-        useAccent: false,
-        solutionsFile: `${__dirname}/../solutions/solutions-science.json`,
-    },
 }
 
 async function main() {
