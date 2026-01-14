@@ -261,7 +261,8 @@ async function main() {
                 currentRound = 1
             }
             const roundResult = await playRound( currentRound, itHasAccents ? word : normalizeAccents( word ) )
-
+            DEBUG && console.log( "- round result: ", roundResult )
+            
             if( !roundResult.validLetters.includes( '-' ) ) {
                 solution = itHasAccents ? word : findWordInDualDictionary( word, dualDictionary )
                 console.log( `✅ Word found in round ${totalRounds}: ${solution}` )
@@ -270,6 +271,8 @@ async function main() {
 
             const possibleWords = wordleSolver.solve( roundResult )
             const wordsWithMoreLetters = sortWordsWithMoreLetters( possibleWords )
+
+            DEBUG && console.log( "- possible words: ", wordsWithMoreLetters.slice( 0, 20 ) )
 
             word = selectWord( wordsWithMoreLetters )
             currentRound++
@@ -286,7 +289,7 @@ async function main() {
             if( wordsWithMoreLetters.length === 1 ) {
                 const theWord = wordsWithMoreLetters[ 0 ]
                 solution = itHasAccents ? theWord : findWordInDualDictionary( theWord, dualDictionary )
-                console.log( `✅ Word found in round ${totalRounds}: ${solution}` )
+                console.log( `✅ Word found (there's only one option) in round ${totalRounds}: ${solution}` )
                 break
             }
         }
