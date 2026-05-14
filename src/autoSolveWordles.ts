@@ -15,7 +15,6 @@ const DEBUG = true
 type GameSolution = {
     gameId: number
     word: string
-    url: string
 }
 
 type GameSolutionsContent = GameSolution[]
@@ -94,12 +93,7 @@ async function main() {
 
             console.log( `🎉 Found word for Wordle (${wordleType}):`, result )
 
-            console.log( `🏗️ Creating custom game for gameId ${gameId} and word ${word}...` )
-            let customWordleUrl = ( result.word?.length ?? 0 ) >= MIN_LETTERS_TO_CREATE_WORDLE
-                ? await getCustomWordleFor( word, useAccent )
-                : ''
-
-            solutions.push( { gameId, word, url: customWordleUrl } )
+            solutions.push( { gameId, word } )
             solutions.sort( ( a, b ) => b.gameId - a.gameId )
 
             await fs.writeFile( solutionsFile, JSON.stringify( solutions, null, 2 ) )
