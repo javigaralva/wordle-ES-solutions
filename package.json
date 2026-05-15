@@ -6,6 +6,8 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
+    "compare": "npx ts-node src/compareFiles.ts",
+    "compare:fix": "npx ts-node src/compareFiles.ts --fix",
     "start": "npm run build && node ./build/autoSolveWordles.js"
   },
   "repository": {
