@@ -121,7 +121,7 @@
   },
   {
     "gameId": 1560,
-    "word": "espin"
+    "word": "espín"
   },
   {
     "gameId": 1559,
@@ -321,11 +321,11 @@
   },
   {
     "gameId": 1510,
-    "word": "clics"
+    "word": "click"
   },
   {
     "gameId": 1509,
-    "word": "hipad"
+    "word": "yihad"
   },
   {
     "gameId": 1508,
@@ -493,7 +493,7 @@
   },
   {
     "gameId": 1467,
-    "word": "majal"
+    "word": "papal"
   },
   {
     "gameId": 1466,
@@ -545,7 +545,7 @@
   },
   {
     "gameId": 1454,
-    "word": "aduro"
+    "word": "apuro"
   },
   {
     "gameId": 1453,
@@ -629,7 +629,7 @@
   },
   {
     "gameId": 1433,
-    "word": "fines"
+    "word": "finés"
   },
   {
     "gameId": 1432,
@@ -705,7 +705,7 @@
   },
   {
     "gameId": 1414,
-    "word": "carne"
+    "word": "carné"
   },
   {
     "gameId": 1413,
@@ -729,7 +729,7 @@
   },
   {
     "gameId": 1408,
-    "word": "ebano"
+    "word": "ébano"
   },
   {
     "gameId": 1407,
@@ -1037,7 +1037,7 @@
   },
   {
     "gameId": 1331,
-    "word": "reten"
+    "word": "retén"
   },
   {
     "gameId": 1330,
@@ -1157,7 +1157,7 @@
   },
   {
     "gameId": 1301,
-    "word": "vigia"
+    "word": "vigía"
   },
   {
     "gameId": 1300,
@@ -1189,7 +1189,7 @@
   },
   {
     "gameId": 1293,
-    "word": "gales"
+    "word": "galés"
   },
   {
     "gameId": 1292,
@@ -1277,7 +1277,7 @@
   },
   {
     "gameId": 1271,
-    "word": "sardo"
+    "word": "dardo"
   },
   {
     "gameId": 1270,
@@ -1285,7 +1285,7 @@
   },
   {
     "gameId": 1269,
-    "word": "cache"
+    "word": "caché"
   },
   {
     "gameId": 1268,
@@ -1381,7 +1381,7 @@
   },
   {
     "gameId": 1245,
-    "word": "elite"
+    "word": "élite"
   },
   {
     "gameId": 1244,
@@ -1469,7 +1469,7 @@
   },
   {
     "gameId": 1223,
-    "word": "danes"
+    "word": "danés"
   },
   {
     "gameId": 1222,
@@ -1493,7 +1493,7 @@
   },
   {
     "gameId": 1217,
-    "word": "vaciá"
+    "word": "vacía"
   },
   {
     "gameId": 1216,
@@ -1505,7 +1505,7 @@
   },
   {
     "gameId": 1214,
-    "word": "sedan"
+    "word": "sedán"
   },
   {
     "gameId": 1213,
@@ -1577,7 +1577,7 @@
   },
   {
     "gameId": 1196,
-    "word": "guion"
+    "word": "guión"
   },
   {
     "gameId": 1195,
@@ -1661,7 +1661,7 @@
   },
   {
     "gameId": 1175,
-    "word": "envió"
+    "word": "envío"
   },
   {
     "gameId": 1174,
@@ -1677,7 +1677,7 @@
   },
   {
     "gameId": 1171,
-    "word": "atico"
+    "word": "ático"
   },
   {
     "gameId": 1170,
@@ -1785,7 +1785,7 @@
   },
   {
     "gameId": 1144,
-    "word": "jamas"
+    "word": "jamás"
   },
   {
     "gameId": 1143,
@@ -1933,7 +1933,7 @@
   },
   {
     "gameId": 1107,
-    "word": "xenon"
+    "word": "xenón"
   },
   {
     "gameId": 1106,
@@ -1962,6 +1962,10 @@
   {
     "gameId": 1100,
     "word": "tizón"
+  },
+  {
+    "gameId": 1099,
+    "word": "milla"
   },
   {
     "gameId": 1098,
@@ -2061,7 +2065,7 @@
   },
   {
     "gameId": 1074,
-    "word": "super"
+    "word": "súper"
   },
   {
     "gameId": 1073,
@@ -2081,7 +2085,7 @@
   },
   {
     "gameId": 1069,
-    "word": "anden"
+    "word": "andén"
   },
   {
     "gameId": 1068,
@@ -2089,7 +2093,7 @@
   },
   {
     "gameId": 1067,
-    "word": "anima"
+    "word": "ánima"
   },
   {
     "gameId": 1066,
@@ -2125,7 +2129,7 @@
   },
   {
     "gameId": 1058,
-    "word": "ibero"
+    "word": "íbero"
   },
   {
     "gameId": 1057,
@@ -2265,7 +2269,7 @@
   },
   {
     "gameId": 1023,
-    "word": "union"
+    "word": "unión"
   },
   {
     "gameId": 1022,
@@ -2357,7 +2361,7 @@
   },
   {
     "gameId": 1000,
-    "word": "éxito"
+    "word": "exito"
   },
   {
     "gameId": 999,
@@ -2469,7 +2473,7 @@
   },
   {
     "gameId": 972,
-    "word": "acaro"
+    "word": "ácaro"
   },
   {
     "gameId": 971,
@@ -2765,7 +2769,7 @@
   },
   {
     "gameId": 898,
-    "word": "ovulo"
+    "word": "óvulo"
   },
   {
     "gameId": 897,
@@ -2853,7 +2857,7 @@
   },
   {
     "gameId": 876,
-    "word": "ojala"
+    "word": "ojalá"
   },
   {
     "gameId": 875,
@@ -3093,7 +3097,7 @@
   },
   {
     "gameId": 816,
-    "word": "linea"
+    "word": "línea"
   },
   {
     "gameId": 815,
@@ -3509,7 +3513,7 @@
   },
   {
     "gameId": 712,
-    "word": "acida"
+    "word": "ácida"
   },
   {
     "gameId": 711,
@@ -3537,7 +3541,7 @@
   },
   {
     "gameId": 705,
-    "word": "lleno"
+    "word": "llenó"
   },
   {
     "gameId": 704,
@@ -3569,7 +3573,7 @@
   },
   {
     "gameId": 697,
-    "word": "ovalo"
+    "word": "óvalo"
   },
   {
     "gameId": 696,
@@ -3717,7 +3721,7 @@
   },
   {
     "gameId": 660,
-    "word": "animo"
+    "word": "ánimo"
   },
   {
     "gameId": 659,
@@ -3801,7 +3805,15 @@
   },
   {
     "gameId": 639,
-    "word": "lider"
+    "word": "líder"
+  },
+  {
+    "gameId": 638,
+    "word": "rasgo"
+  },
+  {
+    "gameId": 637,
+    "word": "bombo"
   },
   {
     "gameId": 636,
@@ -3829,7 +3841,7 @@
   },
   {
     "gameId": 630,
-    "word": "paseo"
+    "word": "paseó"
   },
   {
     "gameId": 629,
@@ -3965,7 +3977,7 @@
   },
   {
     "gameId": 596,
-    "word": "pixel"
+    "word": "píxel"
   },
   {
     "gameId": 595,
@@ -4069,7 +4081,7 @@
   },
   {
     "gameId": 570,
-    "word": "foton"
+    "word": "fotón"
   },
   {
     "gameId": 569,
@@ -4077,7 +4089,7 @@
   },
   {
     "gameId": 568,
-    "word": "angel"
+    "word": "ángel"
   },
   {
     "gameId": 567,
@@ -4553,7 +4565,7 @@
   },
   {
     "gameId": 449,
-    "word": "animo"
+    "word": "ánimo"
   },
   {
     "gameId": 448,
@@ -4721,7 +4733,7 @@
   },
   {
     "gameId": 407,
-    "word": "video"
+    "word": "vídeo"
   },
   {
     "gameId": 406,
@@ -5049,7 +5061,7 @@
   },
   {
     "gameId": 325,
-    "word": "gripe"
+    "word": "cielo"
   },
   {
     "gameId": 324,
@@ -5129,7 +5141,7 @@
   },
   {
     "gameId": 305,
-    "word": "hinco"
+    "word": "hincó"
   },
   {
     "gameId": 304,
@@ -5213,7 +5225,7 @@
   },
   {
     "gameId": 284,
-    "word": "vació"
+    "word": "vacío"
   },
   {
     "gameId": 283,
@@ -5225,7 +5237,7 @@
   },
   {
     "gameId": 281,
-    "word": "índia"
+    "word": "india"
   },
   {
     "gameId": 280,
@@ -5277,7 +5289,7 @@
   },
   {
     "gameId": 268,
-    "word": "oxido"
+    "word": "óxido"
   },
   {
     "gameId": 267,
@@ -5545,7 +5557,7 @@
   },
   {
     "gameId": 201,
-    "word": "atomo"
+    "word": "átomo"
   },
   {
     "gameId": 200,
@@ -5625,7 +5637,7 @@
   },
   {
     "gameId": 181,
-    "word": "opera"
+    "word": "ópera"
   },
   {
     "gameId": 180,
@@ -5657,7 +5669,7 @@
   },
   {
     "gameId": 173,
-    "word": "dolar"
+    "word": "dólar"
   },
   {
     "gameId": 172,
@@ -5797,7 +5809,7 @@
   },
   {
     "gameId": 138,
-    "word": "ambar"
+    "word": "ámbar"
   },
   {
     "gameId": 137,
@@ -5937,7 +5949,7 @@
   },
   {
     "gameId": 103,
-    "word": "serio"
+    "word": "sesgo"
   },
   {
     "gameId": 102,
@@ -5969,7 +5981,7 @@
   },
   {
     "gameId": 95,
-    "word": "óvulo"
+    "word": "ovulo"
   },
   {
     "gameId": 94,
@@ -6237,7 +6249,7 @@
   },
   {
     "gameId": 28,
-    "word": "rocío"
+    "word": "rocio"
   },
   {
     "gameId": 27,
@@ -6341,10 +6353,10 @@
   },
   {
     "gameId": 2,
-    "word": "nieve"
+    "word": "hueso"
   },
   {
     "gameId": 1,
-    "word": "canto"
+    "word": "nieve"
   }
 ]

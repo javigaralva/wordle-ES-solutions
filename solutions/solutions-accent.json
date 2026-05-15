@@ -821,7 +821,7 @@
   },
   {
     "gameId": 1332,
-    "word": "aja"
+    "word": "ají"
   },
   {
     "gameId": 1331,
@@ -1053,7 +1053,7 @@
   },
   {
     "gameId": 1274,
-    "word": "asa"
+    "word": "así"
   },
   {
     "gameId": 1273,
@@ -1061,11 +1061,11 @@
   },
   {
     "gameId": 1272,
-    "word": "tajá"
+    "word": "papá"
   },
   {
     "gameId": 1271,
-    "word": "muré"
+    "word": "puré"
   },
   {
     "gameId": 1270,
@@ -1729,7 +1729,7 @@
   },
   {
     "gameId": 1105,
-    "word": "palpi"
+    "word": "hawái"
   },
   {
     "gameId": 1104,
@@ -1737,7 +1737,7 @@
   },
   {
     "gameId": 1103,
-    "word": "hálara"
+    "word": "sáhara"
   },
   {
     "gameId": 1102,
@@ -1761,7 +1761,7 @@
   },
   {
     "gameId": 1097,
-    "word": "cancán"
+    "word": "cancún"
   },
   {
     "gameId": 1096,
@@ -1777,7 +1777,7 @@
   },
   {
     "gameId": 1093,
-    "word": "cáncano"
+    "word": "cáucaso"
   },
   {
     "gameId": 1092,
@@ -1837,7 +1837,7 @@
   },
   {
     "gameId": 1078,
-    "word": "mosco"
+    "word": "moscú"
   },
   {
     "gameId": 1077,
@@ -1869,7 +1869,7 @@
   },
   {
     "gameId": 1070,
-    "word": "zuzón"
+    "word": "guión"
   },
   {
     "gameId": 1069,
@@ -1962,6 +1962,10 @@
   {
     "gameId": 1047,
     "word": "lotería"
+  },
+  {
+    "gameId": 1046,
+    "word": "caserío"
   },
   {
     "gameId": 1045,
@@ -2537,7 +2541,7 @@
   },
   {
     "gameId": 902,
-    "word": "burgésa"
+    "word": "jirón"
   },
   {
     "gameId": 901,
@@ -2637,7 +2641,7 @@
   },
   {
     "gameId": 877,
-    "word": "consúl"
+    "word": "cónsul"
   },
   {
     "gameId": 876,
@@ -2773,7 +2777,7 @@
   },
   {
     "gameId": 843,
-    "word": "elíseos"
+    "word": "elíseo"
   },
   {
     "gameId": 842,
@@ -2797,7 +2801,7 @@
   },
   {
     "gameId": 837,
-    "word": "aráceos"
+    "word": "aráceo"
   },
   {
     "gameId": 836,
@@ -2929,7 +2933,7 @@
   },
   {
     "gameId": 804,
-    "word": "mandóna"
+    "word": "poción"
   },
   {
     "gameId": 803,
@@ -3177,7 +3181,7 @@
   },
   {
     "gameId": 742,
-    "word": "éctasis"
+    "word": "éxtasis"
   },
   {
     "gameId": 741,
@@ -3493,7 +3497,7 @@
   },
   {
     "gameId": 663,
-    "word": "fleo"
+    "word": "óleo"
   },
   {
     "gameId": 662,
@@ -3773,7 +3777,7 @@
   },
   {
     "gameId": 593,
-    "word": "galaxía"
+    "word": "pólvora"
   },
   {
     "gameId": 592,
@@ -3802,6 +3806,14 @@
   {
     "gameId": 586,
     "word": "viático"
+  },
+  {
+    "gameId": 585,
+    "word": "éxodo"
+  },
+  {
+    "gameId": 584,
+    "word": "anómico"
   },
   {
     "gameId": 583,
@@ -5049,7 +5061,7 @@
   },
   {
     "gameId": 272,
-    "word": "húmeda"
+    "word": "melodía"
   },
   {
     "gameId": 271,
@@ -5489,7 +5501,7 @@
   },
   {
     "gameId": 162,
-    "word": "rutina"
+    "word": "mareé"
   },
   {
     "gameId": 161,
