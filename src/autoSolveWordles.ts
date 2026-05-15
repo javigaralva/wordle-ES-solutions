@@ -94,7 +94,6 @@ async function main() {
             console.log( `🎉 Found word for Wordle (${wordleType}):`, result )
 
             solutions.push( { gameId, word } )
-            solutions.sort( ( a, b ) => b.gameId - a.gameId )
 
             await fs.writeFile( solutionsFile, JSON.stringify( solutions, null, 2 ) )
             console.log( `✅ Solution for gameId: ${gameId} added` )
