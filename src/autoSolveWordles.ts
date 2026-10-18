@@ -210,7 +210,7 @@ async function main() {
         DEBUG && console.log( `Cells get: `, numberOfCells )
         const numOfLetters = numberOfCells / NUM_OF_ROUNDS
         if( numOfLetters === 0 ) return
-        const { default: dictionary }: { default: string[] } = await import( `./dictionaries/words-${numOfLetters}-es.json` )
+        const { default: dictionary }: { default: string[] } = await import( `./dictionaries/${numOfLetters}.json` )
         DEBUG && console.log( 'Dictionary loaded' )
         return dictionary
     }
