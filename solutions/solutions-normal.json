@@ -6461,11 +6461,11 @@
   },
   {
     "gameId": 1616,
-    "word": "kéfir"
+    "word": "kefir"
   },
   {
     "gameId": 1617,
-    "word": "agora"
+    "word": "ágora"
   },
   {
     "gameId": 1618,
@@ -6477,7 +6477,7 @@
   },
   {
     "gameId": 1620,
-    "word": "guion"
+    "word": "guión"
   },
   {
     "gameId": 1621,
@@ -6505,7 +6505,7 @@
   },
   {
     "gameId": 1627,
-    "word": "vació"
+    "word": "vacío"
   },
   {
     "gameId": 1628,
@@ -6521,7 +6521,7 @@
   },
   {
     "gameId": 1631,
-    "word": "jamas"
+    "word": "jamás"
   },
   {
     "gameId": 1632,
@@ -6529,7 +6529,7 @@
   },
   {
     "gameId": 1633,
-    "word": "alien"
+    "word": "alíen"
   },
   {
     "gameId": 1634,
@@ -6617,7 +6617,7 @@
   },
   {
     "gameId": 1655,
-    "word": "caida"
+    "word": "caída"
   },
   {
     "gameId": 1656,
@@ -6733,7 +6733,7 @@
   },
   {
     "gameId": 1684,
-    "word": "ibero"
+    "word": "íbero"
   },
   {
     "gameId": 1685,
@@ -6773,7 +6773,7 @@
   },
   {
     "gameId": 1694,
-    "word": "taxon"
+    "word": "taxón"
   },
   {
     "gameId": 1695,
@@ -6809,7 +6809,7 @@
   },
   {
     "gameId": 1703,
-    "word": "bótox"
+    "word": "botox"
   },
   {
     "gameId": 1704,
@@ -6960,12 +6960,16 @@
     "word": "bolsa"
   },
   {
+    "gameId": 1741,
+    "word": "indie"
+  },
+  {
     "gameId": 1742,
-    "word": "arama"
+    "word": "araña"
   },
   {
     "gameId": 1743,
-    "word": "gemir"
+    "word": "remix"
   },
   {
     "gameId": 1744,
