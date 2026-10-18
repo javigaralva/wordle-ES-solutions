@@ -248,6 +248,7 @@ async function main() {
         let currentRound = NUM_OF_ROUNDS + 1
         let totalRounds = 1
         let solution
+        let isLastCandidateGuess = false
         while( !solution ) {
             if( currentRound > NUM_OF_ROUNDS ) {
                 await startNewWordle( wordleUrl )
@@ -262,16 +263,21 @@ async function main() {
                 break
             }
 
+            if( isLastCandidateGuess ) {
+                console.log( `❌ The only remaining candidate "${word}" was incorrect; the dictionary may be outdated. The solution was not updated.` )
+                break
+            }
+
             const possibleWords = wordleSolver.solve( roundResult )
             const wordsWithMoreLetters = sortWordsWithMoreLetters( possibleWords )
 
             DEBUG && console.log( "- possible words: ", wordsWithMoreLetters.slice( 0, 20 ) )
 
-            word = selectWord( wordsWithMoreLetters )
+            const isOnlyOption = wordsWithMoreLetters.length === 1
             currentRound++
             totalRounds++
 
-            if( totalRounds > NUM_OF_ROUNDS * 2 ) {
+            if( totalRounds > NUM_OF_ROUNDS * 2 && !isOnlyOption ) {
                 console.log( `❌ No solution found in ${NUM_OF_ROUNDS * 2} rounds` )
                 break
             }
@@ -279,11 +285,11 @@ async function main() {
                 console.log( `❌ No words found in round ${totalRounds}` )
                 break
             }
-            if( wordsWithMoreLetters.length === 1 ) {
-                const theWord = wordsWithMoreLetters[ 0 ]
-                solution = itHasAccents ? theWord : findWordInDualDictionary( theWord, dualDictionary )
-                console.log( `✅ Word found (there's only one option) in round ${totalRounds}: ${solution}` )
-                break
+
+            word = selectWord( wordsWithMoreLetters )
+            isLastCandidateGuess = isOnlyOption
+            if( isLastCandidateGuess ) {
+                console.log( `🔎 Only one option remains; confirming it on the board in round ${totalRounds}: ${word}` )
             }
         }
 
